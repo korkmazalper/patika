@@ -1,0 +1,28 @@
+--SELECT b.title, CONCAT (au.firstname , ' ' , au.lastname)  FROM book AS b
+--JOIN author AS au ON
+--b.author_id=au.id;
+--insert into book(title, pagenumber,publicationyear,author_id)
+--VALUES('Kasagi',143,'1920-12-12',12);
+/*
+CREATE TABLE test(
+	realtype REAL,
+	doubletype DOUBLE PRECISION,
+	numerictype  NUMERIC
+				 );
+INSERT INTO test
+VALUES(
+	1.1234567890123456789012345678901234567890234455566666778989001234567890,
+	1.1234567890123456789012345678901234567890234455566666778989001234567890,
+	1.1234567890123456789012345678901234567890234455566666778989001234567890
+);
+
+SELECT * from test;*/
+CREATE TABLE users(
+	id SERIAL PRIMARY KEY,
+	userName VARCHAR(50) NOT NULL,
+	email VARCHAR(30),
+	age SMALLINT
+);
+INSERT INTO users (userName,email,age) 
+VALUES('alperkorkmaz','ad@bd.cd',45);
+SELECt * from users;
